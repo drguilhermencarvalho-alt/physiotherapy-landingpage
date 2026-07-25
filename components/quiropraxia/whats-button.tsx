@@ -14,18 +14,21 @@ const variants = {
 
 export function QuiroWhatsButton({
   location,
+  href = WHATSAPP_QUIRO_URL,
   variant = "solid",
   className,
   children,
 }: {
   location: string
+  /** URL de WhatsApp própria — para mensagens com contexto (ex.: a região que dói) */
+  href?: string
   variant?: keyof typeof variants
   className?: string
   children: ReactNode
 }) {
   return (
     <a
-      href={WHATSAPP_QUIRO_URL}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => track("whatsapp_click", { location, page: "quiropraxia" })}

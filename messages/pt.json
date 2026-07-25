@@ -300,19 +300,68 @@
     },
     "conditions": {
       "tagline": "O que tratamos",
-      "title": "Dores e condições que tratamos na clínica",
-      "subtitle": "Da dor aguda à limitação de movimento — tratamento com base em avaliação, não em achismo.",
+      "title": "Onde dói?",
+      "subtitle": "Escolha a região. Mostro o que costuma estar por trás e como o tratamento começa.",
+      "pick": "Escolha uma região",
+      "cta": "Falar sobre isso no WhatsApp",
       "items": {
-        "hernia": "Hérnia de Disco",
-        "lombar": "Dor Lombar",
-        "cervical": "Dor Cervical",
-        "ciatico": "Nervo Ciático",
-        "pescoco": "Dor no Pescoço",
-        "escapulas": "Dor entre as Escápulas",
-        "ombro": "Dor no Ombro",
-        "quadril": "Dor no Quadril",
-        "atletas": "Recovery para Atletas",
-        "movimento": "Limitação de Movimento"
+        "cervical": {
+          "label": "Pescoço",
+          "condition": "Dor cervical",
+          "feels": "Acordo travado, e virar o pescoço pra dar ré no carro virou um problema.",
+          "does": "A avaliação testa mobilidade e localiza qual segmento cervical travou. Ajuste e liberação começam na mesma sessão, com exercícios pra não voltar.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Minha queixa é dor no pescoço e gostaria de agendar uma avaliação."
+        },
+        "ombro": {
+          "label": "Ombro",
+          "condition": "Dor no ombro",
+          "feels": "Não consigo levantar o braço pra pegar algo na prateleira, e dormir daquele lado é impossível.",
+          "does": "Testamos a articulação e o manguito rotador pra separar tendinite, impacto e dor referida da cervical. O tratamento muda conforme o achado.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Minha queixa é dor no ombro e gostaria de agendar uma avaliação."
+        },
+        "escapulas": {
+          "label": "Entre as escápulas",
+          "condition": "Dor entre as escápulas",
+          "feels": "Aquela pontada no meio das costas que aparece depois de horas no computador.",
+          "does": "Quase sempre é a torácica travada somada a ombros protruídos. Tratamos a coluna e reprogramamos a postura do dia a dia — não é só soltar o ponto que dói.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Minha queixa é dor entre as escápulas e gostaria de agendar uma avaliação."
+        },
+        "lombar": {
+          "label": "Lombar",
+          "condition": "Dor lombar",
+          "feels": "Dói pra calçar o sapato, e ficar sentado muito tempo virou castigo.",
+          "does": "Exame físico e testes de movimento apontam qual estrutura está gerando a dor. Você não precisa chegar sabendo o que é — descobrir isso é o trabalho da avaliação.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Minha queixa é dor lombar e gostaria de agendar uma avaliação."
+        },
+        "hernia": {
+          "label": "Hérnia de disco",
+          "condition": "Hérnia de disco",
+          "feels": "O exame apontou hérnia e a primeira palavra que ouvi foi cirurgia.",
+          "diagram": "Sob carga, o núcleo do disco escapa pra trás e pressiona a raiz nervosa. É daí que vem a dor que desce.",
+          "does": "Hérnia que aparece na ressonância nem sempre é a que dói — muita gente tem hérnia de imagem sem sintoma nenhum. A avaliação confirma se o disco é mesmo a origem da sua dor antes de qualquer conclusão. Cirurgia é exceção, não ponto de partida.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Tenho hérnia de disco e gostaria de agendar uma avaliação."
+        },
+        "quadril": {
+          "label": "Quadril",
+          "condition": "Dor no quadril",
+          "feels": "Dói ao levantar da cadeira e ao subir escada. Já evito agachar.",
+          "does": "Avaliamos quadril, lombar e como você distribui carga ao andar. Muita dor de quadril nasce de uma pelve que não se move direito.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Minha queixa é dor no quadril e gostaria de agendar uma avaliação."
+        },
+        "ciatico": {
+          "label": "Desce pela perna",
+          "condition": "Nervo ciático",
+          "feels": "A dor sai da lombar e desce pela perna. Às vezes formiga até o pé.",
+          "does": "Dor que desce quase sempre é raiz nervosa comprimida lá na lombar. Tratamos onde está a causa, não onde você sente — e medimos a evolução a cada reavaliação.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Minha queixa é dor que desce pela perna e gostaria de agendar uma avaliação."
+        },
+        "atletas": {
+          "label": "Treino",
+          "condition": "Recovery para atletas",
+          "feels": "Treino sério, mas o corpo não acompanha mais — sempre tem algo travado.",
+          "does": "Manutenção entre os treinos: mobilidade, liberação e ajustes pra você render sem se lesionar. O plano é montado em cima da sua rotina de treino.",
+          "message": "Olá, Dr. Guilherme! Vim pela página de Quiropraxia. Treino e gostaria de agendar uma avaliação de manutenção."
+        }
       }
     },
     "techniques": {

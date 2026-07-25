@@ -6,7 +6,7 @@ import { TrustBar } from "@/components/quiropraxia/trust-bar"
 import { QuiroStats } from "@/components/quiropraxia/quiro-stats"
 import { QuiroBreadcrumb } from "@/components/quiropraxia/quiro-breadcrumb"
 import { QuiroAbout } from "@/components/quiropraxia/quiro-about"
-import { ConditionsGrid } from "@/components/quiropraxia/conditions-grid"
+import { WhereItHurts } from "@/components/quiropraxia/where-it-hurts"
 import { TechniquesSection } from "@/components/quiropraxia/techniques-section"
 import { InstitutionalVideo } from "@/components/quiropraxia/institutional-video"
 import { ConsultSteps } from "@/components/quiropraxia/consult-steps"
@@ -120,7 +120,7 @@ export default async function QuiropraxiaPage() {
         <QuiroStats />
         <QuiroTestimonials />
         <ConsultSteps />
-        <ConditionsGrid />
+        <WhereItHurts />
         <TechniquesSection />
         <QuiroAbout />
         <QuiroLocation />

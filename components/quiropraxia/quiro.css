@@ -32,6 +32,16 @@
 .quiro .q-card-hover {
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* A dor "esquenta" quando o card recebe foco/hover */
+.quiro .q-bm-glow {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.quiro .q-card-hover:hover .q-bm-glow,
+.quiro .q-card-hover:focus-within .q-bm-glow {
+  opacity: 1;
+}
 .quiro .q-card-hover:hover {
   transform: translateY(-4px);
   border-color: color-mix(in srgb, var(--q-copper) 55%, transparent);
@@ -47,6 +57,48 @@
   animation: q-slow-zoom 24s ease-in-out infinite alternate;
 }
 
+/* Hérnia de disco: sob carga o núcleo escapa pra trás e comprime a raiz.
+   Um ciclo = neutro → carga → sustenta → alivia. */
+.quiro .q-hd-top,
+.quiro .q-hd-annulus,
+.quiro .q-hd-nucleus,
+.quiro .q-hd-bulge,
+.quiro .q-hd-nerve {
+  transform-box: fill-box;
+  animation: 4.5s ease-in-out infinite;
+}
+.quiro .q-hd-top { animation-name: q-hd-load; }
+.quiro .q-hd-annulus { transform-origin: center bottom; animation-name: q-hd-squash; }
+.quiro .q-hd-nucleus { animation-name: q-hd-migrate; }
+.quiro .q-hd-bulge { transform-origin: left center; animation-name: q-hd-protrude; }
+.quiro .q-hd-nerve { animation-name: q-hd-pinch; }
+
+@keyframes q-hd-load {
+  0%, 12% { transform: translateY(0); }
+  42%, 74% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+@keyframes q-hd-squash {
+  0%, 12% { transform: scaleY(1); }
+  42%, 74% { transform: scaleY(0.75); }
+  100% { transform: scaleY(1); }
+}
+@keyframes q-hd-migrate {
+  0%, 12% { transform: translateX(0); fill: var(--q-text); opacity: 0.38; }
+  42%, 74% { transform: translateX(15px); fill: var(--q-copper); opacity: 0.9; }
+  100% { transform: translateX(0); fill: var(--q-text); opacity: 0.38; }
+}
+@keyframes q-hd-protrude {
+  0%, 12% { transform: scaleX(0.03); }
+  42%, 74% { transform: scaleX(1); }
+  100% { transform: scaleX(0.03); }
+}
+@keyframes q-hd-pinch {
+  0%, 12% { stroke: currentColor; opacity: 0.28; }
+  42%, 74% { stroke: var(--q-copper); opacity: 1; }
+  100% { stroke: currentColor; opacity: 0.28; }
+}
+
 /* Faixa marquee de rolagem infinita */
 @keyframes q-marquee {
   from { transform: translateX(0); }
@@ -60,5 +112,12 @@
   .quiro .q-reveal { opacity: 1; transform: none; transition: none; }
   .quiro .q-hero-media { animation: none; }
   .quiro .q-card-hover, .quiro .q-card-hover:hover { transform: none; transition: none; }
+  .quiro .q-bm-glow { transition: none; }
+  /* congela no estado herniado — é o que o desenho precisa ensinar */
+  .quiro .q-hd-top { animation: none; transform: translateY(5px); }
+  .quiro .q-hd-annulus { animation: none; transform: scaleY(0.75); }
+  .quiro .q-hd-nucleus { animation: none; transform: translateX(15px); fill: var(--q-copper); opacity: 0.9; }
+  .quiro .q-hd-bulge { animation: none; transform: scaleX(1); }
+  .quiro .q-hd-nerve { animation: none; stroke: var(--q-copper); opacity: 1; }
   .quiro .q-marquee-track { animation: none; }
 }

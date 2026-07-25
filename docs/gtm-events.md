@@ -28,6 +28,7 @@ Código: `lib/analytics.ts` → `track(event, params)` faz `dataLayer.push({ eve
 | `triage_start` | início do formulário de triagem | — | — / `Lead` / `Subscribe` |
 | `triage_step_complete` | cada passo da triagem | `step` | só GA4 (funil granular) |
 | `triage_complete` | triagem finalizada | — | `generate_lead` / `CompleteRegistration` / `CompleteRegistration` |
+| `quiro_region_select` | lead escolhe onde dói na seção "Onde dói?" (`/quiropraxia`) | `region` (`cervical` \| `ombro` \| `escapulas` \| `lombar` \| `quadril` \| `ciatico` \| `atletas`), `page` | só GA4 (mapa de queixa por lead) |
 | `scroll_depth` | marcos de scroll | `depth` (25/50/75/100), `page` (`main` \| `guia` \| `quiropraxia`) | — / `ScrollDepth` (custom) / `ScrollDepth` |
 | `section_view` | seção entra na tela (guia, /quiropraxia) | `section`, `page` (`guia` \| `quiropraxia`) | — / `SectionView` (custom) / `SectionView` |
 | `add_to_cart` | scroll 75% na guia (proxy alta intenção) | `content_name`, `content_type`, `value`, `currency` | — / `AddToCart` / `AddToCart` |

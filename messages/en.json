@@ -300,19 +300,68 @@
     },
     "conditions": {
       "tagline": "What we treat",
-      "title": "Pain and conditions we treat at the clinic",
-      "subtitle": "From acute pain to restricted movement — treatment based on assessment, not guesswork.",
+      "title": "Where does it hurt?",
+      "subtitle": "Pick the area. I'll show what's usually behind it and how treatment starts.",
+      "pick": "Pick an area",
+      "cta": "Talk about this on WhatsApp",
       "items": {
-        "hernia": "Disc Herniation",
-        "lombar": "Low Back Pain",
-        "cervical": "Cervical Pain",
-        "ciatico": "Sciatic Nerve",
-        "pescoco": "Neck Pain",
-        "escapulas": "Pain Between Shoulder Blades",
-        "ombro": "Shoulder Pain",
-        "quadril": "Hip Pain",
-        "atletas": "Athlete Recovery",
-        "movimento": "Restricted Movement"
+        "cervical": {
+          "label": "Neck",
+          "condition": "Cervical pain",
+          "feels": "I wake up stiff, and turning my neck to back the car out has become a problem.",
+          "does": "The assessment tests mobility and pinpoints which cervical segment locked up. Adjustment and release start in the same session, with exercises so it doesn't come back.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. My complaint is neck pain and I'd like to book an assessment."
+        },
+        "ombro": {
+          "label": "Shoulder",
+          "condition": "Shoulder pain",
+          "feels": "I can't raise my arm to reach a shelf, and sleeping on that side is impossible.",
+          "does": "We test the joint and rotator cuff to separate tendinitis, impingement and pain referred from the neck. Treatment changes with the finding.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. My complaint is shoulder pain and I'd like to book an assessment."
+        },
+        "escapulas": {
+          "label": "Between shoulder blades",
+          "condition": "Pain between the shoulder blades",
+          "feels": "That stab in the middle of my back after hours at the computer.",
+          "does": "It's almost always a locked thoracic spine plus rounded shoulders. We treat the spine and retrain your everyday posture — not just release the sore spot.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. My complaint is pain between the shoulder blades and I'd like to book an assessment."
+        },
+        "lombar": {
+          "label": "Lower back",
+          "condition": "Low back pain",
+          "feels": "It hurts to put my shoes on, and sitting for long has become punishment.",
+          "does": "Physical exam and movement tests point to which structure is generating the pain. You don't need to arrive knowing what it is — working that out is what the assessment is for.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. My complaint is low back pain and I'd like to book an assessment."
+        },
+        "hernia": {
+          "label": "Disc herniation",
+          "condition": "Disc herniation",
+          "feels": "The scan showed a herniation, and the first word I heard was surgery.",
+          "diagram": "Under load, the disc's nucleus escapes backwards and presses on the nerve root. That's where the pain running down comes from.",
+          "does": "A herniation on an MRI isn't always the one causing pain — plenty of people have one on imaging with no symptoms at all. The assessment confirms whether the disc is actually the source before any conclusion. Surgery is the exception, not the starting point.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. I have a disc herniation and I'd like to book an assessment."
+        },
+        "quadril": {
+          "label": "Hip",
+          "condition": "Hip pain",
+          "feels": "It hurts getting up from a chair and climbing stairs. I avoid squatting now.",
+          "does": "We assess hip, lower back and how you load the body when walking. A lot of hip pain starts with a pelvis that doesn't move properly.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. My complaint is hip pain and I'd like to book an assessment."
+        },
+        "ciatico": {
+          "label": "Down the leg",
+          "condition": "Sciatic nerve",
+          "feels": "The pain leaves my lower back and runs down my leg. Sometimes it tingles to the foot.",
+          "does": "Pain that travels down is almost always a nerve root compressed up in the lower back. We treat where the cause is, not where you feel it — and measure progress at every reassessment.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. My complaint is pain running down my leg and I'd like to book an assessment."
+        },
+        "atletas": {
+          "label": "Training",
+          "condition": "Athlete recovery",
+          "feels": "I train hard, but my body can't keep up anymore — something's always locked up.",
+          "does": "Maintenance between sessions: mobility, release and adjustments so you perform without getting injured. The plan is built around your training schedule.",
+          "message": "Hi, Dr. Guilherme! I came from the Chiropractic page. I train and I'd like to book a maintenance assessment."
+        }
       }
     },
     "techniques": {
